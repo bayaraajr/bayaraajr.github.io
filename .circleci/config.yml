@@ -25,10 +25,11 @@ jobs:
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  install: 
-    jobs: 
-      - install
+  # install: 
+  #   jobs: 
+  #     - install
   deploy:
     jobs:
+      - install
       - node/run:
-          yarn-run: build
+          npm-run: build
