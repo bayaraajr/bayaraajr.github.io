@@ -28,9 +28,10 @@ workflows:
   # install: 
   #   jobs: 
   #     - install
-  deploy:
+  install:
     jobs:
       - install
+  deploy:
+    jobs:
       - node/run:
-          override-ci-command: yarn
-          yarn-run: build
+          yarn-run: deploy
