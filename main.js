@@ -33434,7 +33434,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 
 
-react_dom__WEBPACK_IMPORTED_MODULE_1__.render(react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Hello World!"), document.getElementById('app-root'));
+react_dom__WEBPACK_IMPORTED_MODULE_1__.render(react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Hello, My name is Bayarjargal."), document.getElementById('app-root'));
 
 })();
 
