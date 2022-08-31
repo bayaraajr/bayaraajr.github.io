@@ -21,6 +21,8 @@ jobs:
       - node/install-packages:
           cache-path: ~/project/node_modules
           override-ci-command: yarn
+      - run: git config user.email "bayarjargal.jr@gmail.com"
+      - run: git config user.name "Bayarjargal.J"
       - run: yarn run deploy
 
 
