@@ -21,8 +21,7 @@ jobs:
       - node/install-packages:
           cache-path: ~/project/node_modules
           override-ci-command: yarn
-      - node/run:
-          yarn-run: deploy 
+      - run: yarn run deploy
 
 
 # Invoke jobs via workflows
