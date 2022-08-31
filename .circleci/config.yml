@@ -9,7 +9,7 @@ version: 2.1
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
-  install:
+  install-and-deploy:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
     executor: node/default
@@ -21,6 +21,9 @@ jobs:
       - node/install-packages:
           cache-path: ~/project/node_modules
           override-ci-command: yarn
+      - node/run:
+          yarn-run: deploy 
+
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -30,8 +33,4 @@ workflows:
   #     - install
   install:
     jobs:
-      - install
-  deploy:
-    jobs:
-      - node/run:
-          yarn-run: deploy
+      - install-and-deploy
