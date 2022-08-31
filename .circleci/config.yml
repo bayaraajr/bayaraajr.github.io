@@ -32,4 +32,4 @@ workflows:
     jobs:
       - install
       - node/run:
-          npm-run: build
+          yarn-run: build
