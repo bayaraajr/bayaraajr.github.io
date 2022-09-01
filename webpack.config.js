@@ -2,6 +2,7 @@ const prod = process.env.NODE_ENV === 'production';
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 module.exports = {
     mode: prod ? 'production' : 'development',
@@ -32,4 +33,7 @@ module.exports = {
         }),
         new MiniCssExtractPlugin(),
     ],
+    resolve: {
+        plugins: [new TsconfigPathsPlugin()]
+    }
 };

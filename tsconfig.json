@@ -14,9 +14,11 @@
         "types": [
             "cypress",
             "node"
-        ]
+        ],
+        "baseUrl": "src"
     },
     "include": [
+        "src",
         "**/*.ts"
     ],
     "exclude": [
