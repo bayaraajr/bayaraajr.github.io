@@ -9,6 +9,10 @@ module.exports = {
     entry: './src/index.tsx',
     output: {
         path: __dirname + '/dist/',
+        // publicPath: "/dist/"
+    },
+    devServer: {
+        allowedHosts: "all"
     },
     module: {
         rules: [

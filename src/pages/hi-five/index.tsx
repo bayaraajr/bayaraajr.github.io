@@ -6,7 +6,9 @@ interface HiFiveProps {
 
 const HiFive: FC<HiFiveProps> = ({ ...props }) => {
     return <div>
-        <p>Don't leave me hangin </p>
+        <p className="text-3xl text-slate-50 font-bold underline">
+            Don't leave me hangin'
+        </p>
         <button>
             👋
         </button>

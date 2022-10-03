@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-interface HomwProps {
+interface HomeProps {
     [key: string]: any
 }
 
-const Home: FC<HomwProps> = ({ ...props }) => {
+const Home: FC<HomeProps> = ({ ...props }) => {
     const navigate = useNavigate();
     return <div>
         <p>Hi there 👋</p>
