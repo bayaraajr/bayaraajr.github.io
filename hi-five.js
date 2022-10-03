@@ -16,7 +16,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const HiFive = ({ ...props }) => {
     return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null,
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Don't leave me hangin "),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: "text-3xl text-slate-50 font-bold underline" }, "Don't leave me hangin'"),
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", null, "\uD83D\uDC4B"));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HiFive);
