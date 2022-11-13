@@ -13,7 +13,8 @@
         "target": "esnext",
         "types": [
             "cypress",
-            "node"
+            "node",
+            "jest",
         ],
         "baseUrl": "src"
     },
