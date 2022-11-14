@@ -1,16 +1,8 @@
-/**
- * @jest-environment jsdom
- */
-
-
 import React from 'react';
 import App from '../App';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 
-it('Should mount successfully', () => {
-
-    const comp = renderer.create(<App />);
-    let tree = comp.toJSON();
-    expect(tree).toMatchSnapshot();
-    
+it('Application should mount successfully', () => {
+    const comp = shallow(<App />);
+    expect(comp).toBeDefined();
 })

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Application should mount successfully 1`] = `
+<div>
+  <p>
+    Loading page...
+  </p>
+</div>
+`;
+
+exports[`Should mount successfully 1`] = `
+<div>
+  <p>
+    Loading page...
+  </p>
+</div>
+`;
